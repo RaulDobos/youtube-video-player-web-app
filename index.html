@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Video Player</title>
+
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Youtube Video Player</h1>
+
+    <form id="add-link-form">
+        <label for="link-input">Link: </label>
+        <input type="text" id="link-input" placeholder="Enter a link...">
+
+        <label for="title-input">Title: </label>
+        <input type="text" id="title-input" placeholder="Insert a title...">
+
+        <label for="time-input">Time(in seconds): </label>
+        <input type="number" id="time-input" value="0">
+
+        <input type="submit" value="Play">
+    </form>
+
+    <table id="links-table">
+        <thead>
+            <tr>
+                <th>Video</th>
+                <th>Title</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <iframe width="420" height="315"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </td>
+
+                <td>Title 1</td>
+
+                <td>
+                    <input type="submit" value="update">
+                </td>
+
+                <td>
+                    <a href="#" class="remove-link" data-id=1>X</a>
+                </td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>
+
+
+
+
